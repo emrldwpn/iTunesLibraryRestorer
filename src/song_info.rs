@@ -12,11 +12,11 @@ impl SongInfo {
     pub fn new(mut info: &HashMap<String, String>) -> Option<SongInfo> {
         let kind = info.get("Kind");
         if kind.is_none() {
-            None
+            return None
         }
 
         if !kind.unwrap().to_lowercase().contains("audio file") {
-            None
+            return None
         }
 
         Some(
@@ -44,5 +44,11 @@ impl SongInfo {
 
     pub fn location(&self) -> &str {
         &self.location
+    }
+}
+
+impl std::fmt::Display for SongInfo {
+    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {
+        write!(f, "Artist: {} | Song Name: {} | Album: {} | File Location: {}", self.artist, self.name, self.album, self.location)
     }
 }
