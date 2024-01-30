@@ -8,9 +8,10 @@ use crate::song_info::SongInfo;
 const SONG_PATH: &str = "plist/dict/dict/dict";
 const KEY_PATH: &str = concatcp!(SONG_PATH, "/key");
 
-pub fn parse_library(file_info: FileInfo) -> Vec<SongInfo> {
+pub fn parse_library(file_info: &FileInfo) -> HashMap<String, HashMap<String, SongInfo>> {
+    let mut artist_map: HashMap<String, HashMap<String, SongInfo>> = HashMap::new();
+
     let mut reader = Reader::from_file(file_info.library()).unwrap();
-    let mut songs: Vec<SongInfo> = Vec::new();
     let mut path = Vec::new();
     let mut buffer = Vec::new();
     let mut song_found = false;
@@ -31,9 +32,12 @@ pub fn parse_library(file_info: FileInfo) -> Vec<SongInfo> {
                 if song_found && !get_path(&path).contains(SONG_PATH) {
                     song_found = false;
                     let song: Option<SongInfo> = SongInfo::new(&song_info);
-                    if (song.is_some())
+                    if song.is_some()
                     {
-                        songs.push(song.unwrap());
+                        let some_song = song.unwrap();
+                        let artist = String::from(some_song.artist());
+                        let song_map = artist_map.entry(artist.to_string()).or_insert(HashMap::new());
+                        song_map.insert(some_song.name().to_string(), some_song);
                     }
                     song_info.clear();
                 }
@@ -52,7 +56,12 @@ pub fn parse_library(file_info: FileInfo) -> Vec<SongInfo> {
                 if get_path(&path) == KEY_PATH {
                     key = text.clone();
                 } else {
+                    if key.is_empty() {
+                        continue;
+                    }
+
                     song_info.insert(key.clone(), text.clone());
+                    key = String::new();
                 }
             }
             Ok(_) => {
@@ -63,7 +72,7 @@ pub fn parse_library(file_info: FileInfo) -> Vec<SongInfo> {
         buffer.clear();
     }
 
-    songs
+    artist_map
 }
 
 fn get_path(path: &Vec<String>) -> String {

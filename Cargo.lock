@@ -27,6 +27,7 @@ name = "iTunesLibraryRestorer"
 version = "0.1.0"
 dependencies = [
  "const_format",
+ "mp3-metadata",
  "quick-xml",
 ]
 
@@ -35,6 +36,12 @@ name = "memchr"
 version = "2.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "523dc4f511e55ab87b694dc30d0f820d60906ef06413f93d4d7a1385599cc149"
+
+[[package]]
+name = "mp3-metadata"
+version = "0.3.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e4eaa3a228dc218005d769b88ce3a0310f49152f2029125289e94c49474c9cc4"
 
 [[package]]
 name = "proc-macro2"

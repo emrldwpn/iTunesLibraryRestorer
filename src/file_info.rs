@@ -1,6 +1,6 @@
 pub struct FileInfo {
     library: String,
-    music: String,
+    music_directory: String,
     _private: (),
 }
 
@@ -14,7 +14,7 @@ impl FileInfo {
 
         FileInfo {
             library: String::from(&args[1]),
-            music: String::from(&args[2]),
+            music_directory: String::from(&args[2]),
             _private: (),
         }
     }
@@ -23,7 +23,7 @@ impl FileInfo {
         &self.library
     }
 
-    pub fn music(&self) -> &str {
-        &self.music
+    pub fn music_directory(&self) -> &str {
+        &self.music_directory
     }
 }

@@ -1,17 +1,28 @@
 mod file_info;
 mod song_info;
 mod xml_parser;
+mod song_parser;
+mod file_restorer;
 
 use crate::file_info::FileInfo;
+use crate::song_info::SongInfo;
+use std::collections::HashMap;
 use std::env;
-use std::error::Error;
 
+/**
+ * iTunesLibraryRestorer parses an iTunes Library XML file and
+ * restores the associated mp3 files to the proper file name and location.
+ * Two command line arguments are required:
+ * 1) Path to Library XML file
+ * 2) Path to recovered mp3 files
+**/
 fn main() {
-    let songs = xml_parser::parse_library(create_file_info());
-    println!("found {} songs", songs.len());
+    let file_info: FileInfo = create_file_info();
+    let artist_map: HashMap<String, HashMap<String, SongInfo>> = xml_parser::parse_library(&file_info);
+    let restored_count: i32 = file_restorer::restore_files(&file_info, &artist_map);
+    println!("Successfully restored {} songs", restored_count);
 }
 
 fn create_file_info() -> FileInfo {
     FileInfo::new(env::args().collect())
 }
-
