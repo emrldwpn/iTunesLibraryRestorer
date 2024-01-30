@@ -2,8 +2,8 @@ use std::collections::HashMap;
 use quick_xml::events::Event;
 use quick_xml::Reader;
 use const_format::concatcp;
-use crate::file_info::FileInfo;
-use crate::song_info::SongInfo;
+use crate::structs::file_info::FileInfo;
+use crate::structs::song_info::SongInfo;
 
 const SONG_PATH: &str = "plist/dict/dict/dict";
 const KEY_PATH: &str = concatcp!(SONG_PATH, "/key");
@@ -54,13 +54,13 @@ pub fn parse_library(file_info: &FileInfo) -> HashMap<String, HashMap<String, So
                 }
 
                 if get_path(&path) == KEY_PATH {
-                    key = text.clone();
+                    key = text;
                 } else {
                     if key.is_empty() {
                         continue;
                     }
 
-                    song_info.insert(key.clone(), text.clone());
+                    song_info.insert(key, text);
                     key = String::new();
                 }
             }

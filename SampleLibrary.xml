@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>Major Version</key><integer>1</integer>
+		<key>Minor Version</key><integer>1</integer>
+		<key>Application Version</key><string>12.10.11.2</string>
+		<key>Date</key><date>2024-01-26T15:26:32Z</date>
+		<key>Features</key>
+		<integer>5</integer>
+		<key>Show Content Ratings</key><true/>
+		<key>Library Persistent ID</key>
+		<string>0418F700FD49A91C</string>
+		<key>Tracks</key>
+		<dict>
+			<key>2788</key>
+			<dict>
+				<key>Track ID</key><integer>2788</integer>
+				<key>Size</key><integer>233161364</integer>
+				<key>Total Time</key><integer>1175876</integer>
+				<key>Disc Number</key><integer>1</integer>
+				<key>Disc Count</key><integer>1</integer>
+				<key>Track Number</key><integer>1</integer>
+				<key>Year</key><integer>2007</integer>
+				<key>Date Modified</key><date>2007-05-25T00:58:32Z</date>
+				<key>Date Added</key><date>2007-05-25T00:53:46Z</date>
+				<key>Bit Rate</key><integer>125</integer>
+				<key>Sample Rate</key><integer>44100</integer>
+				<key>Release Date</key><date>2007-04-05T07:00:00Z</date>
+				<key>Artwork Count</key><integer>1</integer>
+				<key>Season</key><integer>1</integer>
+				<key>Episode Order</key><integer>1</integer>
+				<key>Persistent ID</key><string>1E17F3DCD474ABB1</string>
+				<key>Track Type</key><string>File</string>
+				<key>Protected</key><true/>
+				<key>Purchased</key><true/>
+				<key>TV Show</key><true/>
+				<key>Has Video</key><true/>
+				<key>File Folder Count</key><integer>4</integer>
+				<key>Library Folder Count</key><integer>1</integer>
+				<key>Name</key><string>Mind Explosion</string>
+				<key>Artist</key><string>Human Giant</string>
+				<key>Album Artist</key><string>Human Giant</string>
+				<key>Album</key><string>Human Giant, Season 1</string>
+				<key>Genre</key><string>Comedy</string>
+				<key>Content Rating</key><string>us-tv|TV-14|500|</string>
+				<key>Series</key><string>Human Giant</string>
+				<key>Episode</key><string>101</string>
+				<key>Location</key><string>file://localhost/C:/Users/ericp/Music/iTunes/iTunes%20Music/TV%20Shows/Human%20Giant/01%20Mind%20Explosion.m4v</string>
+			</dict>
+			<key>2800</key>
+			<dict>
+				<key>Track ID</key><integer>2800</integer>
+				<key>Size</key><integer>5161755</integer>
+				<key>Total Time</key><integer>316290</integer>
+				<key>Track Number</key><integer>5</integer>
+				<key>Year</key><integer>2000</integer>
+				<key>Date Modified</key><date>2010-12-11T21:15:00Z</date>
+				<key>Date Added</key><date>2012-08-10T15:12:42Z</date>
+				<key>Bit Rate</key><integer>128</integer>
+				<key>Sample Rate</key><integer>44100</integer>
+				<key>Play Count</key><integer>9</integer>
+				<key>Play Date</key><integer>3773033505</integer>
+				<key>Play Date UTC</key><date>2023-07-24T12:51:45Z</date>
+				<key>Rating</key><integer>80</integer>
+				<key>Album Rating</key><integer>80</integer>
+				<key>Album Rating Computed</key><true/>
+				<key>Artwork Count</key><integer>1</integer>
+				<key>Persistent ID</key><string>7D751E98B91BAD29</string>
+				<key>Track Type</key><string>File</string>
+				<key>File Folder Count</key><integer>-1</integer>
+				<key>Library Folder Count</key><integer>-1</integer>
+				<key>Name</key><string>Tin Can Experiment</string>
+				<key>Artist</key><string>6 Gig</string>
+				<key>Album Artist</key><string>6gig</string>
+				<key>Album</key><string>Tincan Experiment</string>
+				<key>Genre</key><string>Other</string>
+				<key>Kind</key><string>MPEG audio file</string>
+				<key>Location</key><string>file://localhost/C:/Music/6%20gig/tincan%20experiment/Tin%20Can%20Experiment.mp3</string>
+			</dict>
+			<key>2956</key>
+			<dict>
+				<key>Track ID</key><integer>2956</integer>
+				<key>Size</key><integer>1619592</integer>
+				<key>Total Time</key><integer>91768</integer>
+				<key>Track Number</key><integer>7</integer>
+				<key>Year</key><integer>2000</integer>
+				<key>Date Modified</key><date>2015-02-01T22:24:20Z</date>
+				<key>Date Added</key><date>2012-08-10T15:12:44Z</date>
+				<key>Bit Rate</key><integer>128</integer>
+				<key>Sample Rate</key><integer>44100</integer>
+				<key>Play Count</key><integer>5</integer>
+				<key>Play Date</key><integer>3740408688</integer>
+				<key>Play Date UTC</key><date>2022-07-11T22:24:48Z</date>
+				<key>Rating</key><integer>80</integer>
+				<key>Rating Computed</key><true/>
+				<key>Album Rating</key><integer>80</integer>
+				<key>Album Rating Computed</key><true/>
+				<key>Artwork Count</key><integer>1</integer>
+				<key>Persistent ID</key><string>C5ED8311A5F597F8</string>
+				<key>Track Type</key><string>File</string>
+				<key>File Folder Count</key><integer>-1</integer>
+				<key>Library Folder Count</key><integer>-1</integer>
+				<key>Name</key><string>smile</string>
+				<key>Artist</key><string>AFI</string>
+				<key>Album Artist</key><string>AFI</string>
+				<key>Album</key><string>The Art Of Drowning</string>
+				<key>Genre</key><string>Other</string>
+				<key>Kind</key><string>MPEG audio file</string>
+				<key>Sort Album</key><string>Art Of Drowning</string>
+				<key>Location</key><string>file://localhost/C:/Music/afi/the%20art%20of%20drowning/07%20smile.mp3</string>
+			</dict>
+			<key>2958</key>
+			<dict>
+				<key>Track ID</key><integer>2958</integer>
+				<key>Size</key><integer>3885049</integer>
+				<key>Total Time</key><integer>233351</integer>
+				<key>Track Number</key><integer>8</integer>
+				<key>Year</key><integer>2000</integer>
+				<key>Date Modified</key><date>2015-02-01T22:24:20Z</date>
+				<key>Date Added</key><date>2012-08-10T15:12:44Z</date>
+				<key>Bit Rate</key><integer>128</integer>
+				<key>Sample Rate</key><integer>44100</integer>
+				<key>Play Count</key><integer>5</integer>
+				<key>Play Date</key><integer>3741153630</integer>
+				<key>Play Date UTC</key><date>2022-07-20T13:20:30Z</date>
+				<key>Rating</key><integer>80</integer>
+				<key>Rating Computed</key><true/>
+				<key>Album Rating</key><integer>80</integer>
+				<key>Album Rating Computed</key><true/>
+				<key>Artwork Count</key><integer>1</integer>
+				<key>Persistent ID</key><string>3C81242CC17B96C4</string>
+				<key>Track Type</key><string>File</string>
+				<key>File Folder Count</key><integer>-1</integer>
+				<key>Library Folder Count</key><integer>-1</integer>
+				<key>Name</key><string>A Story at Three</string>
+				<key>Artist</key><string>AFI</string>
+				<key>Album Artist</key><string>AFI</string>
+				<key>Composer</key><string>AFI/Davey Havok</string>
+				<key>Album</key><string>The Art Of Drowning</string>
+				<key>Genre</key><string>Rock</string>
+				<key>Kind</key><string>MPEG audio file</string>
+				<key>Sort Name</key><string>Story at Three</string>
+				<key>Sort Album</key><string>Art Of Drowning</string>
+				<key>Location</key><string>file://localhost/C:/Music/afi/the%20art%20of%20drowning/08%20A%20Story%20at%20Three.mp3</string>
+			</dict>
+			<key>2960</key>
+			<dict>
+				<key>Track ID</key><integer>2960</integer>
+				<key>Size</key><integer>3473702</integer>
+				<key>Total Time</key><integer>207647</integer>
+				<key>Track Number</key><integer>9</integer>
+				<key>Year</key><integer>2000</integer>
+				<key>Date Modified</key><date>2015-02-01T22:24:20Z</date>
+				<key>Date Added</key><date>2012-08-10T15:12:44Z</date>
+				<key>Bit Rate</key><integer>128</integer>
+				<key>Sample Rate</key><integer>44100</integer>
+				<key>Play Count</key><integer>4</integer>
+				<key>Play Date</key><integer>3744383028</integer>
+				<key>Play Date UTC</key><date>2022-08-26T22:23:48Z</date>
+				<key>Rating</key><integer>80</integer>
+				<key>Album Rating</key><integer>80</integer>
+				<key>Album Rating Computed</key><true/>
+				<key>Artwork Count</key><integer>1</integer>
+				<key>Persistent ID</key><string>E7A40AD2BB00D52E</string>
+				<key>Track Type</key><string>File</string>
+				<key>File Folder Count</key><integer>-1</integer>
+				<key>Library Folder Count</key><integer>-1</integer>
+				<key>Name</key><string>The Days Of The Phoenix</string>
+				<key>Artist</key><string>AFI</string>
+				<key>Album Artist</key><string>AFI</string>
+				<key>Composer</key><string>AFI/Davey Havok</string>
+				<key>Album</key><string>The Art Of Drowning</string>
+				<key>Genre</key><string>Rock</string>
+				<key>Kind</key><string>MPEG audio file</string>
+				<key>Sort Name</key><string>Days Of The Phoenix</string>
+				<key>Sort Album</key><string>Art Of Drowning</string>
+				<key>Location</key><string>file://localhost/C:/Music/afi/the%20art%20of%20drowning/09%20The%20Days%20Of%20The%20Phoenix.mp3</string>
+			</dict>
+		<key>Music Folder</key><string>file://localhost/C:/Users/ericp/Music/iTunes/iTunes%20Music/</string>
+		</dict>
+	</dict>
+</plist>

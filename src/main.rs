@@ -1,11 +1,11 @@
-mod file_info;
-mod song_info;
-mod xml_parser;
-mod song_parser;
-mod file_restorer;
+mod parsers;
+mod structs;
+mod services;
 
-use crate::file_info::FileInfo;
-use crate::song_info::SongInfo;
+use crate::parsers::xml_parser;
+use crate::services::file_restorer;
+use crate::structs::file_info::FileInfo;
+use crate::structs::song_info::SongInfo;
 use std::collections::HashMap;
 use std::env;
 
