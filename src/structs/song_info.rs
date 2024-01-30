@@ -12,7 +12,7 @@ pub struct SongInfo {
 
 impl SongInfo {
     pub fn new(info: &HashMap<String, String>) -> Option<SongInfo> {
-        let kind = info.get("Kind");
+        let kind: Option<&String> = info.get("Kind");
         if kind.is_none() {
             return None
         }
@@ -25,8 +25,8 @@ impl SongInfo {
             .replace("file://localhost/", "")
             .replace("%20", " ");
 
-        let file_name  = Path::new(&location).file_name().unwrap().to_str().unwrap();
-        let mut directory = location.replace(file_name, "");
+        let file_name: &str  = Path::new(&location).file_name().unwrap().to_str().unwrap();
+        let mut directory: String = location.replace(file_name, "");
         if directory.ends_with("/") {
             directory.truncate(directory.len() - 1);
         }
