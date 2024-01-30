@@ -21,7 +21,27 @@ impl SongInfo {
             return None
         }
 
-        let location: String = info.get("Location").unwrap().to_string()
+        let artist: Option<&String> = info.get("Artist");
+        if artist.is_none() {
+            return None
+        }
+
+        let name: Option<&String> = info.get("Name");
+        if name.is_none() {
+            return None
+        }
+
+        let album: Option<&String> = info.get("Album");
+        if album.is_none() {
+            return None
+        }
+
+        let location: Option<&String> = info.get("Location");
+        if location.is_none() {
+            return None
+        }
+
+        let location: String = location.unwrap().to_string()
             .replace("file://localhost/", "")
             .replace("%20", " ");
 
@@ -33,10 +53,10 @@ impl SongInfo {
 
         Some(
             SongInfo {
-                artist: info.get("Artist").unwrap().to_string(),
-                name: info.get("Name").unwrap().to_string(),
-                album: info.get("Album").unwrap().to_string(),
-                directory: String::from(directory),
+                artist: artist.unwrap().to_string(),
+                name: name.unwrap().to_string(),
+                album: album.unwrap().to_string(),
+                directory,
                 location,
                 _private: (),
             }
