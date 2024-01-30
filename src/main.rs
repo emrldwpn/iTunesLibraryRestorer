@@ -24,5 +24,5 @@ fn main() {
 }
 
 fn create_file_info() -> FileInfo {
-    FileInfo::new(env::args().collect())
+    FileInfo::new(&env::args().collect())
 }

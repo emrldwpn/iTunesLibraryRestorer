@@ -5,7 +5,7 @@ pub struct FileInfo {
 }
 
 impl FileInfo {
-    pub fn new(args: Vec<String>) -> FileInfo {
+    pub fn new(args: &Vec<String>) -> FileInfo {
         if args.len() < 3
         {
             eprintln!("Missing required arguments!");
